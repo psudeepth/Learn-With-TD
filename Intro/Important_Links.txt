@@ -1,0 +1,13 @@
+Introduction to Autodesk Maya Python Programming
+
+Autodesk Maya PLE Edition:
+
+	https://www.autodesk.com/education/free-software/maya
+
+MEL Commands Documentation:
+
+	https://help.autodesk.com/view/MAYAUL/2020/ENU/index.html?contextId=COMMANDS-INDEX
+
+Python Commands Documentation:
+
+	https://help.autodesk.com/view/MAYAUL/2020/ENU/index.html?contextId=COMMANDSPYTHON-INDEX
