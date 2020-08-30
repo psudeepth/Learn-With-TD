@@ -1,4 +1,4 @@
-# Youtube Link: 
+# Youtube Link: https://youtu.be/rFIH1yvGYSo
 
 # Organize objects to display layer in Maya using Python
 
@@ -35,13 +35,15 @@ for each in finalAssemblies:
 # Removing the duplicates from generated list and assigning as a new variable.
 finalCatagory = list(set(catagory))
 
-# Looping through catagory
-for eachCatagory in finalCatagory:
-	# Creating a new display layer with the each catagory name.
-	pm.createDisplayLayer(name=eachCatagory, empty=True)
-	# Looping through all final assemblies
-	for eachAssembly in finalAssemblies:
+# Looping through final catagories
+for eachCata in finalCatagory:
+	# Creating gropus with catagory name with _GRP as suffix
+	cataGRP = pm.group(name='{}_GRP'.format(eachCata), em=True)
+	# Looping through final assemblies
+	for eachAssmb in finalAssemblies:
 		# Checking whether each assembly is starting with catagory name.
-		if eachAssembly.startswith(eachCatagory):
-			# Adding the assembly to the catagory display layer.
-			pm.editDisplayLayerMembers(eachCatagory, eachAssembly)
+		if eachAssmb.startswith(eachCata):
+			# Adding the assembly to the specific group
+			pm.parent(eachAssmb, cataGRP)
+# Clearing the selection
+pm.select(cl=True)
