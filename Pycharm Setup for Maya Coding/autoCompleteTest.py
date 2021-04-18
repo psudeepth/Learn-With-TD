@@ -1,2 +1,3 @@
 import pymel.core as pm
-print ("Hello world i am from PyCharm")
+pm.polySphere(raduis=10)
+print ("Hello Maya i am from PyCharm")
