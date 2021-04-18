@@ -1,0 +1,17 @@
+Coding env pre-requisites, setup and installation.
+
+1. pycharm download
+2. Visual studio code
+3. Devkit download
+4. auto completion
+5. maya charm installation and setup.
+6. adding the command port code to usersetup.py
+
+usersetup usage
+1. Create a file named userSetup.py in the following folder:
+    Windows: ..\My Documents\maya\<Version>\scripts
+    Mac OS X: ~/Library/Preferences/Autodesk/maya/<version>/scripts.
+    Linux: ~/maya/<version>/scripts.
+    (where ~ is your home folder)
+
+2. In the userSetup.py file, type the commands you want to Maya to run on start up.
